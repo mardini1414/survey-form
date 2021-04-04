@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Build a survey form</title>
+    <link rel="stylesheet" href="app.css">
+</head>
+
+<body>
+    <div class="title">
+        <h1 id="title">Survei Formulir untuk Kamu</h1>
+        <p id="description">Terimakasih telah meluangkan waktu anda</p>
+    </div>
+    <section id="main">
+        <form action="" id="survey-form">
+            <div class="input">
+                <label id="name-label" for="name">Nama</label>
+                <input type="text" id="name" placeholder="Input namamu" required>
+                <label id="email-label" for="email">Email</label>
+                <input type="email" id="email" placeholder="Input emailmu" required>
+                <label id="number-label" for="number">Umur</label>
+                <input type="number" min="17" max="35" id="number" placeholder="Input umurmu" required>
+            </div>
+            <div class="jenis-kelamin">
+                <p>Jenis kelamin</p>
+                <label for="laki-laki">Laki laki <input value="laki-laki" name="jenis-kelamin" type="radio"></label>
+                <label for="perempuan">Perempuan <input value="perempuan" name="jenis-kelamin" type="radio"></label>
+            </div>
+            <div class="status-pekerjaan">
+                <p>Status pekerjaan</p>
+                <select name="pekerjaan" id="dropdown">
+                    <option value="kerja">Kerja</option>
+                    <option value="sekolah">Sekolah</option>
+                    <option value="pengangguran">Penganguran</option>
+                </select>
+            </div>
+            <div class="hobi">
+                <p>Hobimu</p>
+                <label for="renang">
+                    <input value="renang" type="checkbox"> Renang
+                </label>
+                <label for="makan">
+                    <input value="makan" type="checkbox"> Makan
+                </label>
+                <label for="rebahan">
+                    <input value="rebahan" type="checkbox"> Rebahan
+                </label>
+            </div>
+            <div class="harapan">
+                <textarea placeholder="Harapanmu" name="harapan" id="" cols="30" rows="5"></textarea>
+            </div>
+            <button id="submit" type="submit">Submit</button>
+        </form>
+    </section><br>
+    <footer>
+        Created by Mardini
+    </footer><br>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+
+</html>
